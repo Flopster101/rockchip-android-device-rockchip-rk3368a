@@ -27,6 +27,7 @@ TARGET_CPU_VARIANT := cortex-a53
 TARGET_CPU_SMP := true
 
 TARGET_PREBUILT_KERNEL := device/rockchip/rk3368a/prebuilt/kernel
+TARGET_PREBUILT_RESOURCE := device/rockchip/rk3368a/prebuilt/second
 BOARD_PREBUILT_DTBIMAGE_DIR := device/rockchip/rk3368a/prebuilt/dtb
 PRODUCT_KERNEL_DTS ?= rk3368-tablet
 PRODUCT_KERNEL_CONFIG ?= rockchip_defconfig android-10.config

@@ -1,0 +1,2 @@
+allow mediaserver sysfs:file { open read };
+allow mediaserver system_data_file:file getattr;

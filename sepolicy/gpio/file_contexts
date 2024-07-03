@@ -1,0 +1,1 @@
+/sys/class/gpio(/.*)? u:object_r:sysfs_gpio0:s0

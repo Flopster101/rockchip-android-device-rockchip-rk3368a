@@ -117,3 +117,12 @@ PRODUCT_PROPERTY_OVERRIDES += \
                 ro.build.shutdown_timeout=0 \
                 persist.enable_task_snapshots=false \
                 ro.vendor.sdkversion = $(CURRENT_SDK_VERSION)
+
+BOARD_SEPOLICY_DIRS += \
+    device/rockchip/rk3368a/sepolicy/led \
+    device/rockchip/rk3368a/sepolicy/gpio \
+    device/rockchip/rk3368a/sepolicy/system \
+    device/rockchip/rk3368a/sepolicy/vendor \
+    device/rockchip/rk3368a/sepolicy/hal \
+    device/rockchip/rk3368a/sepolicy/media \
+    device/rockchip/rk3368a/sepolicy/dtoverlay

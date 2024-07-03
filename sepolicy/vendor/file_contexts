@@ -1,0 +1,3 @@
+# for device
+/dev/block/by-name/splash                       u:object_r:splash_block_device:s0
+/dev/block/by-name/dtoverlay                    u:object_r:userdata_block_device:s0

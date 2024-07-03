@@ -1,0 +1,5 @@
+allow hal_bluetooth_default bluetooth_data_file:dir search;
+allow hal_bluetooth_default node:udp_socket node_bind;
+allow hal_bluetooth_default port:udp_socket name_bind;
+allow hal_bluetooth_default rtkbt_device:chr_file { ioctl open read write };
+allow hal_bluetooth_default self:udp_socket { bind setopt write };

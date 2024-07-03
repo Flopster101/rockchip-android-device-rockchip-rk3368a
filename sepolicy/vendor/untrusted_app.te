@@ -1,0 +1,2 @@
+allow untrusted_app serial_device:chr_file { getattr ioctl lock open read write };
+allow untrusted_app sysfs:dir { open read };

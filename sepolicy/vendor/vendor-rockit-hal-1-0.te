@@ -1,0 +1,1 @@
+allow vendor-rockit-hal-1-0 default_prop:file { getattr map open read };

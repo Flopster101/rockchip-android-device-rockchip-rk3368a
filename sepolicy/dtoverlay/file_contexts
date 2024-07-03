@@ -1,0 +1,1 @@
+/dtoverlay(/.*)?                u:object_r:vfat:s0

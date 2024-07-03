@@ -1,0 +1,3 @@
+allow mediaprovider splash_block_device:blk_file { getattr open };
+allow mediaprovider block_device:dir search;
+allow mediaprovider system_prop:property_service set;

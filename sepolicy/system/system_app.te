@@ -1,0 +1,1 @@
+allow system_app serialno_prop:file { getattr map open read };

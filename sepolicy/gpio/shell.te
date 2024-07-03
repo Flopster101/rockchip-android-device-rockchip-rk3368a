@@ -1,0 +1,1 @@
+allow shell sysfs_gpio0:file { open read write create getattr setattr };

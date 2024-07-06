@@ -8,6 +8,20 @@ on property:sys.boot_completed=1
     chown root system /sys/class/devfreq/dmc/governor
     chmod 0664 /sys/class/devfreq/dmc/governor
 
+on early-init
+     symlink /dev/block/platform/ff0f0000.dwmmc/by-name/frp /dev/block/by-name/frp
+     symlink /dev/block/platform/ff0f0000.dwmmc/by-name/security /dev/block/by-name/security
+     symlink /dev/block/platform/ff0f0000.dwmmc/by-name/backup /dev/block/by-name/backup
+     symlink /dev/block/platform/ff0f0000.dwmmc/by-name/dtb /dev/block/by-name/dtb
+     symlink /dev/block/platform/ff0f0000.dwmmc/by-name/dtbo /dev/block/by-name/dtbo
+     symlink /dev/block/platform/ff0f0000.dwmmc/by-name/uboot /dev/block/by-name/uboot
+     symlink /dev/block/platform/ff0f0000.dwmmc/by-name/super /dev/block/by-name/super
+     symlink /dev/block/platform/ff0f0000.dwmmc/by-name/trust /dev/block/by-name/trust
+     symlink /dev/block/platform/ff0f0000.dwmmc/by-name/misc /dev/block/by-name/misc
+     symlink /dev/block/platform/ff0f0000.dwmmc/by-name/cache /dev/block/by-name/cache
+     symlink /dev/block/platform/ff0f0000.dwmmc/by-name/boot /dev/block/by-name/boot
+     symlink /dev/block/platform/ff0f0000.dwmmc/by-name/recovery /dev/block/by-name/recovery
+
 on early-boot
     # Update dm-verity state and set partition.*.verified properties
     verity_update_state
